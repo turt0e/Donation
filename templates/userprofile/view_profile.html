@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}View Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Your Profile</h2>
+    <ul>
+        <li>First Name: {{ profile.first_name }}</li>
+        <li>Last Name: {{ profile.last_name }}</li>
+        <li>Weight: {{ profile.weight }} kg</li>
+        <li>Height: {{ profile.height }} cm</li>
+        <li>Region: {{ profile.region }}</li>
+        <li>Province: {{ profile.province }}</li>
+        <li>Municipality: {{ profile.municipality }}</li>
+        <li>Blood Type: {{ profile.blood_type }}</li>
+        <li>Available to Donate: {{ profile.availability }}</li>
+        <li>Last Donation Date: {{ profile.last_donation_date }}</li>
+        <li>Profile Created: {{ profile.created_at }}</li>
+        <li>Profile Updated: {{ profile.updated_at }}</li>
+    </ul>
+    <h3>Blood Donation Requests</h3>
+    <ul>
+        {% for request in blood_requests %}
+        <li>{{ request.blood_type }} - {{ request.request_type }} - {{ request.region }}, {{ request.province }}, {{ request.municipality }}</li>
+        {% empty %}
+        <li>No blood donation requests found.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'profile:update_profile' %}" class="btn btn-danger">Update Profile</a>
+</div>
+{% endblock %}

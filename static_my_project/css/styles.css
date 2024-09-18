@@ -1,0 +1,61 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #d9534f !important;
+}
+
+.nav-link {
+    color: #555 !important;
+}
+
+.nav-link:hover {
+    color: #d9534f !important;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer span {
+    color: #555;
+}
+
+h2 {
+    color: #d9534f;
+}
+
+button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
