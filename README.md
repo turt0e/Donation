@@ -24,4 +24,4 @@ The Blood Donation Project is designed to serve as a hub for individuals in need
    - **Manage Requests:** Admins can create, edit, and delete blood donation requests.
    - **Manage Users:** Admins can edit and delete user accounts.
 
-unfixable error, i give up (deleted database or smth)
+unfixable error, i give up (deleted database or smth) ---> what.png
